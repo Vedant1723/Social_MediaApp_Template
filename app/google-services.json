@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "475134049075",
+    "firebase_url": "https://assignmentapp-1b997.firebaseio.com",
+    "project_id": "assignmentapp-1b997",
+    "storage_bucket": "assignmentapp-1b997.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:475134049075:android:fe6a01ab7e1899cae1dc46",
+        "android_client_info": {
+          "package_name": "com.vedev.assignmentblackcoffer"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "475134049075-ga33ae3l11rh1sl148u1jmpjce669c5v.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDsTz7pYIxZoxaRHOuOMy4iSbv--2o9nsI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "475134049075-ga33ae3l11rh1sl148u1jmpjce669c5v.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="5dp"
+    android:background="@drawable/rounded_edittext"
+    android:elevation="10dp">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/savedUserDp"
+        android:layout_width="56dp"
+        android:layout_height="56dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:src="@drawable/facebook_logo"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"></de.hdodenhof.circleimageview.CircleImageView>
+
+    <TextView
+        android:id="@+id/savedUsername"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="12dp"
+        android:text="Username"
+        android:textColor="@android:color/black"
+        android:textSize="20dp"
+        app:layout_constraintStart_toEndOf="@+id/savedUserDp"
+        app:layout_constraintTop_toTopOf="@+id/savedUserDp" />
+
+    <TextView
+        android:id="@+id/savedUserLocation"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="location"
+        android:textColor="@android:color/black"
+        app:layout_constraintBottom_toBottomOf="@+id/savedUserDp"
+        app:layout_constraintEnd_toEndOf="@+id/savedUsername"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/savedUsername"
+        app:layout_constraintTop_toBottomOf="@+id/savedUsername"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <TextView
+        android:id="@+id/textView14"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=","
+        android:textColor="@android:color/black"
+        app:layout_constraintBottom_toBottomOf="@+id/savedUserLocation"
+        app:layout_constraintStart_toEndOf="@+id/savedUserLocation"
+        app:layout_constraintTop_toTopOf="@+id/savedUserLocation" />
+
+    <TextView
+        android:id="@+id/savedUserDesignation"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="2dp"
+        android:text="designation"
+        android:textColor="@android:color/black"
+        app:layout_constraintBottom_toBottomOf="@+id/textView14"
+        app:layout_constraintStart_toEndOf="@+id/textView14"
+        app:layout_constraintTop_toTopOf="@+id/textView14" />
+
+    <ImageView
+        android:id="@+id/imageView5"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_marginEnd="20dp"
+        app:layout_constraintBottom_toBottomOf="@+id/textView14"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/savedUsername"
+        app:srcCompat="@drawable/heart" />
+
+    <TextView
+        android:id="@+id/savedBrodcastDescription"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="20dp"
+        android:text="oapojfaspofj spoacj dopjsdoghlch goidfh goai po hbpibj adp jbpodj bpobapod jadpbjadopgjapoj hadpohadpifbjpoajb"
+        android:textSize="15sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/savedUserDesignation" />
+
+    <TextView
+        android:id="@+id/savedTags"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:text="#tags"
+        android:textColor="#0275b2"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/savedBrodcastDescription" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

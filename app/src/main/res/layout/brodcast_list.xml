@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="5dp"
+    android:background="@drawable/rounded_edittext"
+    android:elevation="10dp">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/brodUserDp"
+        android:layout_width="56dp"
+        android:layout_height="56dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="15dp"
+        android:src="@drawable/facebook_logo"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"></de.hdodenhof.circleimageview.CircleImageView>
+
+    <TextView
+        android:id="@+id/brodUserName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:text="Username"
+        android:textColor="@android:color/black"
+        android:textSize="20sp"
+        app:layout_constraintStart_toEndOf="@+id/brodUserDp"
+        app:layout_constraintTop_toTopOf="@+id/brodUserDp" />
+
+    <TextView
+        android:id="@+id/brodUserLocation"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="5dp"
+        android:text="userLocation"
+        android:textColor="@android:color/black"
+        app:layout_constraintBottom_toBottomOf="@+id/brodUserDp"
+        app:layout_constraintStart_toEndOf="@+id/brodUserDp"
+        app:layout_constraintTop_toBottomOf="@+id/brodUserName" />
+
+    <TextView
+        android:id="@+id/brodUserDesig"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="2dp"
+        android:text="userDesig"
+        android:textColor="@android:color/black"
+        app:layout_constraintBottom_toBottomOf="@+id/textView12"
+        app:layout_constraintStart_toEndOf="@+id/textView12"
+        app:layout_constraintTop_toTopOf="@+id/textView12" />
+
+    <TextView
+        android:id="@+id/brodDescription"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="20dp"
+        android:text="oapojfaspofj spoacj dopjsdoghlch goidfh goai po hbpibj adp jbpodj bpobapod jadpbjadopgjapoj hadpohadpifbjpoajb"
+        android:textSize="15sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/brodUserDp" />
+
+    <TextView
+        android:id="@+id/brodTags"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="10dp"
+        android:text="#tags1"
+        android:textColor="#0275b2"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/brodDescription" />
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="10dp"
+        android:clickable="true"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/rounded_edittext"
+        android:elevation="15dp"
+        android:text="INVITE"
+        android:textColor="#0275b2"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/brodTags" />
+
+    <Button
+        android:id="@+id/button3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="5dp"
+        android:clickable="true"
+        android:background="@drawable/rounded_edittext"
+        android:elevation="15dp"
+        android:text="SAVE"
+        android:textColor="#0275b2"
+        app:layout_constraintBottom_toBottomOf="@+id/button2"
+        app:layout_constraintStart_toEndOf="@+id/button2"
+        app:layout_constraintTop_toTopOf="@+id/button2" />
+
+    <TextView
+        android:id="@+id/textView12"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=","
+        android:textColor="@android:color/black"
+        app:layout_constraintBottom_toBottomOf="@+id/brodUserLocation"
+        app:layout_constraintStart_toEndOf="@+id/brodUserLocation"
+        app:layout_constraintTop_toTopOf="@+id/brodUserLocation" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
